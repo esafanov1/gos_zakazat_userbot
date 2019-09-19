@@ -52,7 +52,10 @@ async def start_mailing(event):
             await asyncio.sleep(20)
             n = 0
     for admin in admins:
-        await client.send_message(admin, 'Mailing is finished. Failed chats:\n{}'.format(failed_chats), link_preview=False)
+        try:
+            await client.send_message(admin, 'Mailing is finished. Failed chats:\n{}'.format(failed_chats), link_preview=False)
+        except:
+            continue
 
 
 client.start()
