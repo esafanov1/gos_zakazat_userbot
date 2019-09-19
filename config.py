@@ -14,4 +14,4 @@ username = None  # should be string
 password = None  # should be string
 
 # admins
-admins = [431164113, 500238135]  # should be int in form [id, id, id, id]
+admins = [431164113]  # should be int in form [id, id, id, id]
