@@ -1,5 +1,7 @@
+import os
+
 api_id = 1039582  # should be int
-api_hash = "8392b43f7beefceecc2dc9c02b93f358"  # should be string
+api_hash = os.environ['api_hash']  # should be string
 
 # proxy, if don't need proxy, leave proxy_type(!) and others as None
 proxy_type = None  # MTProto, SOCKS4, SOCKS5 and HTTP are supported, should be string
